@@ -9,4 +9,4 @@ Swift link detector helper. (Support all existed domain =D )
 
 ### Demo:
 
-![](http://imgur.com/a/G2Kc9)
+![](https://i.imgur.com/y6KMMWT.gif)
