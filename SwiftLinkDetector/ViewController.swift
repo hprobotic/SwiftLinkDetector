@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var resultTextLabel: UILabel!
     @IBOutlet weak var actionButton: UIButton!
-    @IBOutlet weak var textInput: UITextField!
+    @IBOutlet weak var textViewInput: UITextView!
     private var isDeteced = false
     fileprivate var linksProperties: [NSTextCheckingResult]?
 
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionButtonPressed(_ sender: Any) {
-        guard let textInputContent = textInput.text else { return }
+        guard let textInputContent = textViewInput.text else { return }
         let att = NSMutableAttributedString.init(string: textInputContent,
                                                  attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: 14)])
         let result = textInputContent.getAllClickableLinks()
